@@ -19,11 +19,10 @@ number = int(input("Enter a number: "))
 number2 = int(input("Enter another number: "))
 number3 = int(input("Enter another number: "))
 
-if(number < number2 and number < number3):
-  print("The smallest number is",number)
-elif(number2 < number and number2 < number3):
-  print("The smallest number is",number2)
-elif(number3 < number and number3 < number2):
-  print("The smallest number is",number3)
-elif(number == number2 == number3):
-  print("The smallest number is",number)
+if(number2 <= number) and (number2 <= number3):
+  smallest = number2
+elif(number <= number2) and (number <= number3):
+  smallest = number
+else:
+  smallest = number3
+print("The smallest number is", smallest)
