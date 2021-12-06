@@ -16,12 +16,14 @@ The smallest number is 2
 '''
 
 number = int(input("Enter a number: "))
+number2 = int(input("Enter another number: "))
+number3 = int(input("Enter another number: "))
 
-smallest = number
-
-number = int(input("Enter another number: "))
-
-if number < smallest:
-  smallest = number
-  
-print("The smallest number is ", smallest)
+if(number < number2 and number < number3):
+  print("The smallest number is",number)
+elif(number2 < number and number2 < number3):
+  print("The smallest number is",number2)
+elif(number3 < number and number3 < number2):
+  print("The smallest number is",number3)
+elif(number == number2 == number3):
+  print("The smallest number is",number)
